@@ -25,7 +25,7 @@ var Box = function () {
     key: 'edit',
     value: function edit() {
       this.box.css({ 'height': this.box.css('width') });
-      this.canvas.font = this.textSize * 2.5 + "px serif";
+      this.canvas.font = this.textSize * 2.25 + "px Arial";
       this.canvas.textAlign = "center";
       this.canvas.clearRect(0, 0, 300, 300);
       this.canvas.fillText("YWC", 150, 100);
@@ -93,7 +93,7 @@ var Box = function () {
     value: function extream() {
       //this.box.css({'background-color':'violet'});
       if (this.state == 'BADSCORE') {
-        this.canvas.font = 48 + "px serif";
+        this.canvas.font = 48 + "px Arial";
         this.canvas.fillStyle = "black";
         this.canvas.fillText("INVALID", 150, 100);
       }
