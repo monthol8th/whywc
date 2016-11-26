@@ -1,6 +1,31 @@
 .box {
   display: inline-block;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+
+
   background-color: rgb(255,255,0);
   width: 30%;
   margin: 1%;
+  margin-top: 10%;
+}
+
+.box > canvas{
+  width: 100%;
+  height: 100%;
+}
+#score > span{
+  margin: 2px;
+}
+@media (max-width: 720px) {
+    .box {
+        width: 40%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    body{
+      text-align: center;
+    }
 }
